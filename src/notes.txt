@@ -1,0 +1,11 @@
+   const App = () => {
+            
+            return React.createElement(
+                "div", // element type
+                {}, // whatever you want to pass into child elements 
+                React.createElement("h1",{},"Adopt Me!")
+            )
+
+        }
+
+variable verity - you can pass as many extra variable as you want and it will let you use as childern

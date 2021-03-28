@@ -1,6 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 import SearchParams from './SearchParams';
+import { Link, Router } from '@reach/router'
+import Details from './details';
 
 const App = () => {
     //   return React.createElement("div", { id: "something" }, [
@@ -11,8 +13,18 @@ const App = () => {
     //   ]);
     return (
         <div>
-            <h1 id="something"> Adopt me !!</h1>
-            <SearchParams />
+            <header>
+                <Link to="/">
+                    Adopt me !!
+                
+                </Link>
+            </header>
+
+            <Router>
+                <SearchParams path="/" />
+                <Details path="/details/:id" />
+            </Router>
+
         </div>
     )
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Pet({ animal, key, name, breed, media, location, id }) {
+export default function Pet({ animal, name, breed, media, location, id }) {
     let hero = "http://placecorgi.com/300/300"
     if (media.length) {
         hero = media[0].small;

@@ -1,6 +1,6 @@
 import React from "react"
 
-class Caraousal extends React.Component {
+class Carousel extends React.Component {
     state = {
         photos: [],
         active: 0
@@ -45,4 +45,4 @@ class Caraousal extends React.Component {
     }
 
 }
-export default Caraousal;
+export default Carousel;
